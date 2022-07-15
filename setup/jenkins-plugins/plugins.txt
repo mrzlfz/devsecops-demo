@@ -1,9 +1,9 @@
-performance@3.18
-docker-workflow@1.26
-dependency-check-jenkins-plugin@5.1.1
-blueocean@1.24.7
-jacoco@3.2.0
+performance@3.20
+docker-workflow@1.29
+dependency-check-jenkins-plugin@5.1.2
+blueocean@1.25.5
+jacoco@3.3.2
 slack@2.4.8
-sonar@2.13.1
+sonar@2.14
 pitmutation@1.0-18
-kubernetes-cli@1.10.2
+kubernetes-cli@1.10.3
