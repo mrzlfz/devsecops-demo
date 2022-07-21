@@ -13,6 +13,7 @@ docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-weekly zap-api-scan.py -t 
 
 exit_code=$?
 
+
 # HTML Report
  sudo mkdir -p owasp-zap-report
  sudo mv zap_report.html owasp-zap-report
@@ -26,3 +27,7 @@ echo "Exit Code : $exit_code"
    else
     echo "OWASP ZAP did not report any Risk"
  fi;
+
+
+# Generate ConfigFile
+# docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-weekly zap-api-scan.py -t http://deve.eastasia.cloudapp.azure.com:32448/v3/api-docs -f openapi -g gen_file
